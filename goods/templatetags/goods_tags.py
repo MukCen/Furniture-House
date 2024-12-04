@@ -15,7 +15,7 @@ def tag_categories():
 
 @register.simple_tag(takes_context=True)
 def change_params(context, **kwargs):
-    query = context['request'].GET.dict()
+    query = context["request"].GET.dict()
     # example with other context vars
     # print(context['title'])
     # print(context['slug_url'])
